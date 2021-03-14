@@ -1,0 +1,31 @@
+﻿@page
+<form>
+ <div class="form-group">
+  <label for="messageInput">Value</label>
+   <input class="form-control" placeholder="Enter a Value" type="text" id="valueInput">
+ </div>
+
+ <div class="form-group">
+  <input class="btn btn-primary" type="button" id="sendButton" type="text" value="Enter Value">
+ </div>
+</form>
+
+<div class="row">
+  <div class="col-12">
+    <hr/>
+  </div>
+</div>
+
+<div id="chartArea">
+ 
+</div>
+
+@section Scripts {
+    <script src="~/js/signalr/dist/browser/signalr.js"></script> 
+    <script src="~/js/charting.js"></script> 
+    <link rel="stylesheet" 
+    href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"> 
+
+    <script 
+    src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script> 
+}
