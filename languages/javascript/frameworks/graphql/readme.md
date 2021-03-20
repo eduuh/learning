@@ -15,9 +15,7 @@ GraphQl is super flexicble.
 
 ### Using Graphql Apis
 
-Graphql exposes only a single url(route). Instead we use a grapql Query to request the data we want.
-The graphql query lets the client determine what data it needs.
-Unlike a rest api which determine what data you want instead.
+Graphql exposes only a single url(route). Instead we use a grapql Query to request the data we want.The graphql query lets the client determine what data it needs.Unlike a rest api which determine what data you want instead.
 
 This inversion of contol makes it flexible and fast since we can avoid some rest api problem of
 overfetching or underfetching(requres multiple requests).
@@ -32,8 +30,7 @@ Desktop and Mobile appliation both have different needs.
 
 ## Summary
 
-Grapql creates fast and flexible Apis, giving clients complete control to ask for just the data they
-need. Fewer HTTP requests, flexible data querying, and small code base to maintain.
+Grapql creates fast and flexible Apis, giving clients complete control to ask for just the data they need. Fewer HTTP requests, flexible data querying, and small code base to maintain.
 
 ### Requirement
 
@@ -110,38 +107,38 @@ const typeDefs = `
      time: String!
      bio: String!
    }
-`;
+`
 
 // applicaiton schema
 // Resolver
 const resolvers = {
   Query: {
     hello() {
-      return "this is  my first query";
+      return "this is  my first query"
     },
     name() {
-      return "Edwin Muraya";
+      return "Edwin Muraya"
     },
     location() {
-      return "Nyeri Kenya";
+      return "Nyeri Kenya"
     },
     time() {
-      return Date.now();
+      return Date.now()
     },
     bio: () => {
-      return "Edwin is A student Learning graphql";
+      return "Edwin is A student Learning graphql"
     },
   },
-};
+}
 
 const server = new GraphQLServer({
   typeDefs,
   resolvers,
-});
+})
 
 server.start(() => {
-  console.log("The server is up!");
-});
+  console.log("The server is up!")
+})
 ```
 
 ```bash

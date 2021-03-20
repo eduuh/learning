@@ -1,0 +1,38 @@
+## About the course
+
+- Introdouction
+  - Basic usage
+  - writing tests
+  - automation
+- Creating requests.
+  - Create different types of HTTP requests.
+  - Understand responses.
+  - Troubleshoot issues.
+- Test and Scripts.
+  - tests and scripts.
+  - Variables
+  - Workflows.
+- Automations
+  - Collection runner
+  - Monitors
+  - Newmans
+- User questions
+  - Advanced senarios
+- Autentication and authorizations
+  - Basice HTTP authentications.
+  - OAuth2 authentications.
+  - Legacy non-rest based systems
+- File uploads
+  - Basice file uploads
+  - testing
+  - Automations
+
+## Postmans News and Updates.
+
+- Postmans is constantly evolving.
+- Monthly update on what has changed.
+- How you can use the newest features.
+
+The first time you open postman, you are prompted **a login screen**
+
+Try to test wiht **htppbin.org**
