@@ -1,0 +1,1 @@
+Git is an opensource version control system which is know for the its speed, stability and distributed collaboratio model.
