@@ -23,12 +23,41 @@ const HomeScreen = ({ navigation }) => {
       <Button
         style={styles.buttonStyle}
         onPress={() => navigation.navigate("Image")}
-        title="Go to ImageSceen"
+        title="Go to ImageSceen: ReusablComponents"
       />
       <Button
         style={styles.buttonStyle}
         onPress={() => navigation.navigate("Counter")}
-        title="Go to Counter"
+        title="Go to Counter: State"
+      />
+
+      <Button
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("Color")}
+        title="Go to ColorScreen:State"
+      />
+
+      <Button
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("Square")}
+        title="Go to Square:State,props,RC"
+      />
+
+      <Button
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("SquareWR")}
+        title="Go to SquareWR:State,props,RC"
+      />
+
+      <Button
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("TextInput")}
+        title="Go to Text InputScreen"
+      />
+      <Button
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("TextValidation")}
+        title="Go to text With Validation"
       />
     </View>
   )
