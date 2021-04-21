@@ -59,6 +59,11 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("TextValidation")}
         title="Go to text With Validation"
       />
+      <Button
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("BoxScreen")}
+        title="Box Screen"
+      />
     </View>
   )
 }
