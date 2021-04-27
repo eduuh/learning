@@ -1,0 +1,15 @@
+{
+  "name": "retweet",
+  "version": "1.0.0",
+  "description": "1. Message People who post certain keywords.(A custom message) 2. A welcome message for new followers 3. Avoid sparm messages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
+}
