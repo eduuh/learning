@@ -1,0 +1,67 @@
+h2 {
+    color: green;
+}
+h3 {
+    color: red;
+}
+h3:hover {
+    color: red;
+    font-size: 2em;
+}
+
+h4 {
+    color: blue;
+}
+
+.title {
+    color: brown
+}
+
+#title-one {
+    color: greenyellow
+}
+
+li {
+    font-size: 2cm;
+}
+
+li:first-child{
+    color: steelblue;
+}
+
+li:nth-child(3){
+    color: tomato
+}
+
+li:last-child {
+    color: red;
+}
+
+li:only-child {
+    color: violet;
+}
+
+.link:link {
+  color:greenyellow;
+  font-size: 2em;
+}
+
+h2 + a {
+    color:indigo;
+    font-size: 4cm;
+}
+
+textarea ~ button {
+    color: purple;
+    font-size: 2cm;
+}
+
+h3[class="edwin"] {
+    color: salmon;
+    font-size: 2cm;
+}
+
+p{
+    font-size: 25px;
+    line-height: 50px;
+}

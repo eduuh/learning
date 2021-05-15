@@ -1,0 +1,22 @@
+body {
+    background: rgba(204, 229, 255, 0);
+    font-size: 2em;
+}
+#title{
+    color: rgb(214, 183, 5);
+}
+
+.subtitle {
+    color: rgb(219,89,3);
+    background: rgb(60, 240, 99);
+}
+
+#service-image {
+    height: 400px;
+    width: 30%;
+
+    background:  radial-gradient(circle,red 20%,blue 30%, green 60%, steelblue);
+    background-size: cover;
+    background-color: steelblue;
+}
+
