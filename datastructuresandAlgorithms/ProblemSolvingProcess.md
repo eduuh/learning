@@ -181,9 +181,9 @@ From something i read on ASci character. The character are usually in a range of
 function isAphanumeric(char){
   code = char.charCodeAt()
   if( 
-      !(code >= 97 && code <= 122 ) &&
-      !(code >= 65 && code <= 90)  &&
-      !(code >= 65 && code <= 90)){
+      !(code >= 97 && code <= 122 ) &&  // numeric
+      !(code >= 65 && code <= 90)  &&  // uppercase alph
+      !(code >= 47 && code <= 58)){  // numerics
       return false
   }
   return true
