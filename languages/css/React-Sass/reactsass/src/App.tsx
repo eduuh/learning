@@ -44,8 +44,45 @@ function App() {
 
       <div className="content">
         <nav className="sidebar">
-          navigation
-          </nav>
+          <ul className="side-nav">
+            <li className="side-nav__item">
+              <a href="#" className="side-nav__link">
+                <svg className="side-nav__icon">
+                  <use xlinkHref={`${sprite}#icon-home`} />
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li className="side-nav__item">
+              <a href="#" className="side-nav__link">
+                <svg className="side-nav__icon">
+                  <use xlinkHref={`${sprite}#icon-aircraft-take-off`} />
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li className="side-nav__item">
+              <a href="#" className="side-nav__link">
+                <svg className="side-nav__icon">
+                  <use xlinkHref={`${sprite}#icon-key`} />
+                </svg>
+                <span>Car rental</span>
+              </a>
+            </li>
+            <li className="side-nav__item">
+              <a href="#" className="side-nav__link">
+                <svg className="side-nav__icon">
+                  <use xlinkHref={`${sprite}#icon-map`} />
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+
+          <div className="legal">
+            &copy; 2021 by trillo. All right reserved
+          </div>
+        </nav>
 
         <main className="hotel-view">
           hotel view
