@@ -400,6 +400,15 @@ With radial gradient you can also manipulate the shape of the gradient. There ar
 
 ### Fonts and text Manipulations
 
+### Text Decoration
+
+
+
+
+
+
+### Css Units
+
 Css has several different units for expressing a lenght.
 Many Css properties take "length" values such as **width, margin, padding, font-size**
 **Length** is the number of folowed by a length unit such **10px** , **2em**.
@@ -432,6 +441,7 @@ pc | picas(1 px = 12pt)
 
 
 ### Relative Units.
+
 Relative Lenght units specify a length relative to another length property. Relative lenght units scale better between different redering medium.
 
 Unit   | Description
@@ -448,7 +458,7 @@ The viewport is the browser window size.
 
 ### Layout
 
-Techiques to meddle with the layout on a website.
+Techiques to meddle with the layout on a website. The bodies witdth and height.
 
 ### FlexBox
 
@@ -458,3 +468,5 @@ Just like Flexbox, this skill is an alternate method to laying items out in CSS.
 ### Animations and Trasitions
 
 Using pseudoselector to create smooth transitions.
+
+
