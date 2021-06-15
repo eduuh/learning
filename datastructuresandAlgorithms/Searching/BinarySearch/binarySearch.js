@@ -12,14 +12,11 @@
  *    if the value is too large move the right pointer down
  * */
 
-const a = binarySearch([1,2,3,4,5,6,7,8,], 5) // 4
-const b =binarySearch([1,2,3,4,5,6,7,8,], 6) // 5
-const c = binarySearch([1,2,3,4,5,6,7,8,9,10], 10) //9
+const a = [1,2,3,4,5,6,7,8]
+const b = [1,2,3,4,5,6,7,8]
+const c = [1,2,3,4,5,6,7,8,9,10]
+const d = [1,2,3,4,5,6,7,8,9,10]
 
-// edge case when a value is not found
-const d = binarySearch([1,2,3,4,5,6,7,8,9,10], 20) //9
-//
-console.log(a,b,c,d)
 
 
 
@@ -46,21 +43,33 @@ function binarySearch( arr , val ){
 }
 
 
+console.log("Binary Search First Try")
+console.log(binarySearch(a, 8))
+console.log(binarySearch(b, 5))
+console.log(binarySearch(c, 1))
+console.log(binarySearch(d, 23))
+
+
+
 function binarySearchShorter( arr , val ){
    let start = 0
    let end = arr.length -1
-   let middle = Math.floor((start + end) / 2)
-    while(arr[middle] !== val && start <= end) {
+    while(start <= end) {
+       let middle = Math.floor((start + end) / 2)
+      if(arr[middle] === val) {
+         return middle;
+      }
         if(val < arr[middle])end = middle -1
         else start = middle +1
-        middle = Math.floor((start + end) / 2)
     }
-    return arr[middle] === val ? middle : -1
+    return -1
 }
 
-console.log(
-    binarySearchShorter([1,2,3,4,5], 10)
-)
+console.log("Binary Search Shorted First Try")
+console.log(binarySearchShorter(a, 8))
+console.log(binarySearchShorter(b, 5))
+console.log(binarySearchShorter(c, 1))
+console.log(binarySearchShorter(d, 23))
 
 // Binary search is time complexity of log n
 // Every time you double the element you are adding an extraa step in finding
