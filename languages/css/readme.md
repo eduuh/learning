@@ -456,17 +456,100 @@ vmax  | Relative to 1% of viewPorts larger dimension
 The viewport is the browser window size.
 
 
-### Layout
+### CSS Layout - display: inline-block
 
-Techiques to meddle with the layout on a website. The bodies witdth and height.
+The display: inline-block value
 
-### FlexBox
+Compared to **display:inline************** the major difference is that **display:inline-block** allows to set a
+width and height to the element.
 
-### Grid
+Also with **display: inline-block** the top and bottom margins/paddings are respected, but with **display: inline** they are not.
 
-Just like Flexbox, this skill is an alternate method to laying items out in CSS. 
-### Animations and Trasitions
+Comparing to **display: block** the major difference is that **display: inline-block** does not add a line-break after the element, so the
+element can sit next to other element.
 
-Using pseudoselector to create smooth transitions.
+
+### Css Floats
+
+The float property specifies how an element should float. The css clear propmerty specifes what element can float beside the cleared elemen and on which side.
+
+The float property
+
+the float property is used for positioning and formating content. 
+
+the float propert can have one of the following values.
+
+1. **left** the element floats to the left of its contianer
+2. **right** the element floats to the right of its container
+3. **none** the element does not float (will be displayed just where it occurs in the text)
+4. **inherit** the element inherits the float value from its nearest parent.
+
+A common pattern I have seen is when using floats element on the nav bar is to use a clear fix
+
+```html
+<nav class="clearfix">
+  <ul class="navigation"
+      <li><a href="#">About us</a></li>
+       <li><a href="#">Pricing</a></li>
+        <li><a href="About Use">Sign Up</a></li>
+      </ul>
+ <div class="buttons"><a class="btn-main" href="#">Sign Up</a>
+   <a class="btn-hot" href="#">Get a Quote</a></div>
+</nav>
+```
+
+
+```scss
+* {
+  margin: 0;
+  padding:0;
+}
+
+$color-primary: #f9ed69; //
+$color-secondary: #f08a5d;
+$color-tertiary: #b83b5e;
+$color-text-dark: #333;
+
+
+nav {
+  margin: 30px;
+  background-color: $color-primary;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.navigation {
+  list-style: none;
+  float: left;
+  
+  li {
+    display: inline-block;
+    margin-left: 30px;
+    
+    &:first-child {
+      margin:0;
+    }
+    
+    a:link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-text-dark;
+      
+    }
+  }
+}
+
+.buttons {
+  float: right
+}
+``
+
+
+
+
+
+
 
 
