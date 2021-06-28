@@ -1,0 +1,53 @@
+## Advantages of Tailwind Css
+
+Minical custom css (if ever)
+Easy design changes from the view files
+Better developer experience
+Mobile first design from the start
+A "polished" and "designed" loop and feel
+
+### Tailwind vs Bootstrap 
+
+1. No pre-build components
+2. Easier to achievet a custom look
+3. Looks messg vs 1 class per element
+
+
+## Background classes
+
+.bg-color-shade
+
+## colors          shades
+
+black, white         - 
+
+
+gray, red ,org yellow        100 - 900
+green teal indigo purple
+pink
+
+
+2. ### Element sizing with REM
+
+1 rem = document base font
+if base font is 16px then 1 rem = 16px
+
+## Tailwind Number system
+
+1 rem = 4 in Tailwind (multiplied by 4)
+if base font is 16px = 1 rem = 4 in Tailwind
+Example width of 16px in Tailwind w-4
+
+1.25 rem = 5 in Tailwind (20px)
+- 
+
+### width and height
+
+.(w|h)-size
+
+sizes
+
+0 , 1,2,4,5,6       +1
+8,10,12
+16,20,24
+32,40,48,56,64
