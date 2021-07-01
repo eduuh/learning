@@ -55,3 +55,5 @@ TypeScript is typed superset of Javascript that compiles to plain Javascript.
 3. Write typescript code
 4. compile into \*.js file
 5. run the \*js file
+
+### time 38:22

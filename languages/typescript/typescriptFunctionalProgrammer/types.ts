@@ -1,5 +1,18 @@
-let fst: (a: any, b: any) => any = (a, b) => a
+type One = {p: string}
 
-let fst2: <T,U>(a: T, b: U) => T = (a,b) =>a;
+interface Two {
+   p:string;
+}
 
-console.log(fst2(2,2))
+let x: One = {p : 'Hi'}
+console.log(x)
+
+let two: Two = x;
+// string, array and function have build-in predicates
+
+let s: string = "edwin"
+let n: number = 32;
+
+console.log(typeof s)
+console.log(typeof n)
+

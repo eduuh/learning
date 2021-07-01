@@ -170,6 +170,29 @@ The second  syntax is preferable since it more like css looks like.
 
 ### Sass and Npm
 
+#### A brief introduction to npm and the Node ecosystem.
+
+**Node** Allow developert to write and run javascrpit application on the server.
+Developers started using node js to also wrtie tools to help with local web
+development.
+
+Npm is a simple command line interface tha allow developer to install and mange
+package on ther local computers. Thear are all kind  of open source tools,
+        libararies and frameworks
+
+install the npm package **node-sass** to work in your project.
+
+```bash
+npm init --yes
+npm install node-sass
+```
+
+
+
+
+
+
+
 
 
 
